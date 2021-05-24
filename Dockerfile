@@ -38,16 +38,16 @@ RUN apk update && apk upgrade && apk add \
 	    	php7-xsl@community \
 	    	php7-zip@community \
 	    	php7-zlib@community \
-			php7-dom@community \
+		php7-dom@community \
 	    	php7-redis@community\
 	    	php7-tokenizer@community \
 	    	php7-gd@community \
-			php7-fileinfo@community \
-			php7-zmq@community \
-			php7-memcached@community \
-			php7-xmlreader@community \
-			php7-fpm@community \
-			&& rm -rf /var/cache/apk/*
+		php7-fileinfo@community \
+		php7-zmq@community \
+		php7-memcached@community \
+		php7-xmlreader@community \
+		php7-fpm@community \
+		&& rm -rf /var/cache/apk/*
 
 # Environments
 ENV TIMEZONE            Asia/Shanghai
