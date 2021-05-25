@@ -1,2 +1,6 @@
 # PHP-FPM
-alpine的php-fpm
+基于alpine的php-fpm
+
+alpine3.10+php7.3.14
+
+镜像地址:docker pull registry.cn-qingdao.aliyuncs.com/blh/php-fpm:latest
