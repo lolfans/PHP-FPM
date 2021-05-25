@@ -1,5 +1,6 @@
 FROM php:fpm-alpine3.10
 
-COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
-RUN install-php-extensions amqp apcu bcmath calendar exif grpc gd xdebug imagick intl mcrypt memcached memcache pcntl pdo_mysql protobuf swoole
+RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
+    install-php-extensions gd xdebug amqp apcu bcmath calendar exif mcrypt pdo_mysql redis
