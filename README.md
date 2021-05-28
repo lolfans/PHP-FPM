@@ -1,7 +1,5 @@
 # PHP-FPM
-php官方镜像
-
-基于alpine的php-fpm
+基于php官方镜像、alpine版本
 
 alpine3.10+php7.4.6
 
